@@ -21,7 +21,7 @@ const Footer = () => {
               <span className="sr-only">GitHub</span>
             </Link>
             <Link
-              href="https://linkedin.com/in/varun-pandey-iita"
+              href="https://linkedin.com/in/varun-pandey-iiita"
               target="_blank"
               rel="noopener noreferrer"
               className="text-orange-600 hover:text-orange-800 transition-colors duration-200"
