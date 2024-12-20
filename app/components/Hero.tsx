@@ -2,7 +2,7 @@
 import React from "react";
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-b from-orange-100 to-orange-200 w-full min-h-screen flex flex-col md:flex-row items-center justify-center p-5 gap-8">
+    <div className="bg-gradient-to-b h-screen from-orange-100 to-orange-200 w-full  flex flex-col md:flex-row items-center justify-center p-5 gap-8">
       <div className="w-full md:w-1/2 space-y-6 text-center md:text-left">
         <h1 className="font-bold font-serif text-4xl sm:text-5xl lg:text-6xl text-orange-800 px-2 ">
           Little Cafe

@@ -7,11 +7,11 @@ import { Card, CardContent } from "@/components/ui/card";
 const About = () => {
   return (
     // <section className="h-full w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-orange-200 to-orange-100 ">
-    <div className="w-full h-full flex flex-col  justify-center items-center px-4 bg-gradient-to-b from-orange-200 to-orange-100">
-      <h2 className=" w-3/12 text-4xl md:text-5xl font-bold font-serif text-orange-800 text-center mb-12 from-orange-200 to-orange-100">
+    <div className="w-full h-screen flex flex-col justify-center items-center px-4 bg-gradient-to-b from-orange-200 to-orange-100">
+      <h2 className=" lg:w-3/12 sm:w-4/12 text-4xl font-bold font-serif text-orange-800 text-center mb-12 from-orange-200 to-orange-100">
         About Us
       </h2>
-      <Card className="w-10/12 bg-gradient-to-r from-orange-200 to-orange-100 flex ">
+      <Card className="lg:w-10/12 md:8/12 sm:6/12 bg-gradient-to-r from-orange-200 to-orange-100 flex ">
         <CardContent className="p-0 bg-gradient-to-r from-orange-200 to-orange-100">
           <div className="flex flex-col md:flex-row bg-gradient-to-r from-orange-200 to-orange-100">
             <div className="w-full md:w-1/2 relative bg-gradient-to-r h-full md:h-auto from-orange-200 to-orange-100">
