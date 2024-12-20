@@ -110,49 +110,49 @@ const ReviewCarousel = () => {
   };
 
   return (
-    <section className="w-full h-full py-12 md:py-24 bg-gradient-to-b from-orange-200 to-orange-100">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl font-bold text-orange-800 text-center mb-12">
-          Customer Reviews
-        </h2>
-        <div className="px-4 md:px-10">
-          <Slider {...settings}>
-            {reviews.map((review) => (
-              <div key={review.id} className="px-2">
-                <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
-                  <CardContent className="p-6 flex flex-col h-full">
-                    <div className="flex items-center mb-4">
-                      <Avatar className="h-12 w-12 mr-4">
-                        <AvatarImage src={review.avatar} alt={review.name} />
-                        <AvatarFallback>{review.name.charAt(0)}</AvatarFallback>
-                      </Avatar>
-                      <div>
-                        <h3 className="font-semibold text-lg text-orange-800">
-                          {review.name}
-                        </h3>
-                        <StarRating rating={review.rating} />
-                      </div>
+    // <section className="w-full h-full py-12 md:py-24 bg-gradient-to-b from-orange-200 to-orange-100">
+    <div className="min-h-screen mx-auto px-4 bg-gradient-to-b from-orange-200 to-orange-100">
+      <h2 className="text-4xl md:text-5xl font-bold text-orange-800 text-center mb-12">
+        Customer Reviews
+      </h2>
+      <div className="px-4 md:px-10">
+        <Slider {...settings}>
+          {reviews.map((review) => (
+            <div key={review.id} className="px-2">
+              <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
+                <CardContent className="p-6 flex flex-col h-full">
+                  <div className="flex items-center mb-4">
+                    <Avatar className="h-12 w-12 mr-4">
+                      <AvatarImage src={review.avatar} alt={review.name} />
+                      <AvatarFallback>{review.name.charAt(0)}</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <h3 className="font-semibold text-lg text-orange-800">
+                        {review.name}
+                      </h3>
+                      <StarRating rating={review.rating} />
                     </div>
-                    <p className="text-orange-700 mb-4 flex-grow">
-                      {review.comment}
-                    </p>
-                    <div className="mt-4 pt-4 border-t border-orange-200">
-                      <Link
-                        href={review.link}
-                        className="inline-flex items-center text-orange-500 hover:text-orange-600 transition-colors duration-200"
-                      >
-                        View full review
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            ))}
-          </Slider>
-        </div>
+                  </div>
+                  <p className="text-orange-700 mb-4 flex-grow">
+                    {review.comment}
+                  </p>
+                  <div className="mt-4 pt-4 border-t border-orange-200">
+                    <Link
+                      href={review.link}
+                      className="inline-flex items-center text-orange-500 hover:text-orange-600 transition-colors duration-200"
+                    >
+                      View full review
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          ))}
+        </Slider>
       </div>
-    </section>
+    </div>
+    // </section>
   );
 };
 

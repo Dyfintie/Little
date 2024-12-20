@@ -10,19 +10,19 @@ export default function Home() {
     <>
       <Navbar />
       <main>
-        <section id="home" className="h-screen bg-orange-200 ">
+        <section id="home" className="min-h-screen w-full bg-orange-200">
           <Hero />
         </section>
-        <section id="about" className="h-screen bg-orange-200 ">
+        <section id="about" className="min-h-screen w-full bg-orange-200">
           <About />
         </section>
-        <section id="menu" className="h-screen bg-orange-200 ">
+        <section id="menu" className="min-h-screen w-full bg-orange-200">
           <Menu />
         </section>
-        <section id="review" className="h-screen bg-orange-200 ">
+        <section id="review" className="min-h-screen w-full bg-orange-200">
           <Review />
         </section>
-        <section id="contact" className="h-screen bg-orange-200 ">
+        <section id="contact" className="min-h-screen w-full bg-orange-200">
           <Contact />
           <Footer />
         </section>
