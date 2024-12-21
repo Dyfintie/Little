@@ -20,7 +20,7 @@ const Navbar = () => {
     { href: "#about", label: "About" },
     { href: "#menu", label: "Menu" },
     { href: "#review", label: "Review" },
-    { href: "#contact", label: "Contact Us" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
@@ -35,12 +35,12 @@ const Navbar = () => {
               height={80}
               className="rounded-md"
             />
-            <span className="text-2xl font-bold text-orange-800">
+            <span className="text-3xl font-extrabold font-serif text-orange-800 ">
               Little Cafe
             </span>
           </Link>
 
-          <nav className="hidden md:flex items-center space-x-8 font-serif font-bold text-2xl">
+          <nav className="hidden md:flex items-center space-x-8 font-serif font-bold text-2xl ">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -50,7 +50,7 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            <Button
+            {/* <Button
               onClick={() =>
                 (window.location.href =
                   "https://www.zomato.com/bangalore/little-cafe-6-basavanagudi")
@@ -58,9 +58,18 @@ const Navbar = () => {
               className="bg-orange-500 hover:bg-orange-600 text-white font-serif font-bold text-lg"
             >
               Order Now
-            </Button>
+            </Button> */}
           </nav>
 
+          <Button
+            onClick={() =>
+              (window.location.href =
+                "https://www.zomato.com/bangalore/little-cafe-6-basavanagudi")
+            }
+            className="bg-orange-500 hover:bg-orange-600 text-white w-fit  "
+          >
+            Order Now
+          </Button>
           <Button
             variant="ghost"
             size="icon"
@@ -75,29 +84,28 @@ const Navbar = () => {
 
       <AnimatePresence>
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-            className="md:hidden bg-orange-50"
-          >
-            <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-              {navItems.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="text-orange-800 hover:text-orange-600 hover:underline font-semibold transition-colors duration-200"
-                  onClick={toggleNavbar}
-                >
-                  {item.label}
-                </Link>
-              ))}
-              <Button className="bg-orange-500 hover:bg-orange-600 text-white w-full">
-                Order Now
-              </Button>
-            </nav>
-          </motion.div>
+          <>
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.3 }}
+              className="md:hidden bg-orange-50"
+            >
+              <nav className="container mx-auto px-4 py-4 flex flex-col space-y-4">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.href}
+                    href={item.href}
+                    className="text-orange-800 hover:text-orange-600 hover:underline font-semibold transition-colors duration-200"
+                    onClick={toggleNavbar}
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </nav>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </header>
