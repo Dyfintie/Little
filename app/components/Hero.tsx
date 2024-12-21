@@ -11,11 +11,8 @@ const Hero = () => {
           A Culinary Journey: Italian, Chinese, and Continental Delights
         </p>
         <p className="font-serif text-lg sm:text-xl text-orange-600 max-w-xl mx-auto md:mx-0 p-2">
-          Embark on a flavorful adventure with a diverse menu inspired by the
-          rich traditions of Italian, Chinese, and Continental cuisines. From
-          handcrafted pasta and wood-fired pizzas to savory stir-fries and
-          gourmet European dishes, experience the perfect blend of authenticity
-          and modern flair in every bite.
+          Explore a menu inspired by Italian, Chinese, and Continental flavors,
+          blending authenticity with modern flair in every bite.
         </p>
       </div>
 
