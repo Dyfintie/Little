@@ -8,11 +8,14 @@ const Hero = () => {
           Little Cafe
         </h1>
         <p className="font-semibold font-serif text-2xl sm:text-3xl lg:text-4xl text-orange-700 px-2">
-          Exquisite North Indian Cuisine
+          A Culinary Journey: Italian, Chinese, and Continental Delights
         </p>
         <p className="font-serif text-lg sm:text-xl text-orange-600 max-w-xl mx-auto md:mx-0 p-2">
-          Experience the rich flavors and aromatic spices of authentic North
-          Indian dishes in a cozy, welcoming atmosphere.
+          Embark on a flavorful adventure with a diverse menu inspired by the
+          rich traditions of Italian, Chinese, and Continental cuisines. From
+          handcrafted pasta and wood-fired pizzas to savory stir-fries and
+          gourmet European dishes, experience the perfect blend of authenticity
+          and modern flair in every bite.
         </p>
       </div>
 

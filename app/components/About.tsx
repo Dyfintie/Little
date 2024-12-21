@@ -25,25 +25,27 @@ const About = () => {
           </div>
           <div className="w-full lg:w-1/2 p-6 sm:p-8 lg:p-10 flex flex-col justify-center">
             <p className="text-orange-700 text-base sm:text-lg leading-relaxed mb-4 flex-shrink">
-              Welcome to Little Cafe, where the rich flavors of North India come
-              to life in every dish. Our story began with a passion for
-              authentic cuisine and a dream to bring the warmth of traditional
-              Indian hospitality to our community.
+              Welcome to Little Cafe, where the vibrant essence of Italian,
+              Chinese, and Continental cuisines comes alive in every dish. What
+              began as a passion for authentic flavors has evolved into a dream
+              to share the warmth of global culinary traditions with our
+              community.
             </p>
             <p className="text-orange-700 text-base sm:text-lg leading-relaxed mb-4 flex-shrink">
-              At Little Cafe, we believe in the power of food to bring people
-              together. Our chefs, with years of experience in crafting
-              exquisite North Indian delicacies, pour their heart and soul into
-              every meal. We source the finest ingredients and use time-honored
-              recipes to create dishes that not only satisfy your palate but
-              also transport you to the vibrant streets of North India.
+              At Little Cafe, we believe in the magic of food to create
+              connections. Our chefs, with years of expertise in crafting
+              exquisite Italian pastas, bold Chinese stir-fries, and elegant
+              Continental specialties, dedicate themselves to curating an
+              experience that delights your senses. By using the finest
+              ingredients and embracing both tradition and innovation, we aim to
+              serve dishes that are truly memorable.
             </p>
             <p className="text-orange-700 text-base sm:text-lg leading-relaxed flex-shrink">
-              From our aromatic curries to our freshly baked naan, every item on
-              our menu is a testament to our commitment to quality and
-              authenticity. We invite you to join us for a culinary journey that
-              celebrates the rich tapestry of North Indian cuisine, right here
-              at Little Cafe.
+              From our creamy risottos and dim sum to perfectly grilled steaks
+              and decadent desserts, every item on our menu reflects our
+              commitment to quality, authenticity, and creativity. Join us at
+              Little Cafe for a culinary journey across continents, and let us
+              share the joy of exceptional dining with you.
             </p>
           </div>
         </CardContent>
