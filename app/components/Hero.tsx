@@ -18,7 +18,7 @@ const Hero = () => {
 
       <div className="w-full md:w-1/2 mt-8 md:mt-0">
         <div className="relative rounded-lg overflow-hidden shadow-2xl ">
-          <video autoPlay loop muted playsInline className="w-full h-auto ">
+          <video preload="auto" autoPlay loop muted playsInline className="w-full h-auto ">
             <source src="/assets/cafe.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>

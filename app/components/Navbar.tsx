@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <header className="bg-orange-100 border-orange-200 sticky top-0 z-20 w-full border-b shadow-md">
-      <div className="w-full md:px-1 mx-auto  lg:px-3 md:py-1">
+      <div className="w-full md:px-1 mx-auto lg:px-3 md:py-1">
         <div className="flex items-center justify-between py-4 ml-3">
           <Link href="/" className="flex items-center space-x-2 ">
             <Image

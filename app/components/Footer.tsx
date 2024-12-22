@@ -4,9 +4,9 @@ import { Github, Linkedin } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-orange-100 border-t border-orange-200">
-      <div className="container mx-auto px-4 py-8">
-        <div className="flex flex-col md:flex-row justify-between items-center">
+    <footer className="w-full bg-orange-100 border-t border-orange-200 h-fit mt-40">
+      <div className="container mx-auto px-4 py-8 ">
+        <div className="flex flex-col md:flex-row justify-between items-center ">
           <p className="text-orange-800 font-semibold font-mono mb-4 md:mb-0">
             Made with ❤️ by Varun Pandey
           </p>
