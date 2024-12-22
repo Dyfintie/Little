@@ -24,10 +24,10 @@ const Navbar = () => {
   ];
 
   return (
-    <header className="bg-orange-100 sticky top-0 z-20 w-full border-b border-orange-200 shadow-md">
-      <div className="container mx-auto px-3 py-1">
-        <div className="flex items-center justify-between py-4">
-          <Link href="/" className="flex items-center space-x-2">
+    <header className="bg-orange-100 border-orange-200 sticky top-0 z-20 w-full border-b shadow-md">
+      <div className="w-full md:px-1 mx-auto  lg:px-3 md:py-1">
+        <div className="flex items-center justify-between py-4 ml-3">
+          <Link href="/" className="flex items-center space-x-2 ">
             <Image
               src={logo}
               alt="Little Cafe Logo"
@@ -35,12 +35,12 @@ const Navbar = () => {
               height={80}
               className="rounded-md"
             />
-            <span className="text-3xl font-extrabold font-serif text-orange-800 ">
+            <span className="lg:text-3xl md:text-2xl text-3xl  font-extrabold font-serif text-orange-800 ">
               Little Cafe
             </span>
           </Link>
 
-          <nav className="hidden md:flex items-center space-x-8 font-serif font-bold text-2xl ">
+          <nav className="hidden md:flex items-center mr-5 lg:space-x-8 md:space-x-4 font-serif font-bold md:text-[1.375rem] lg:text-2xl ">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -50,7 +50,7 @@ const Navbar = () => {
                 {item.label}
               </Link>
             ))}
-            {/* <Button
+            <Button
               onClick={() =>
                 (window.location.href =
                   "https://www.zomato.com/bangalore/little-cafe-6-basavanagudi")
@@ -58,7 +58,7 @@ const Navbar = () => {
               className="bg-orange-500 hover:bg-orange-600 text-white font-serif font-bold text-lg"
             >
               Order Now
-            </Button> */}
+            </Button>
           </nav>
 
           <Button
@@ -66,14 +66,14 @@ const Navbar = () => {
               (window.location.href =
                 "https://www.zomato.com/bangalore/little-cafe-6-basavanagudi")
             }
-            className="bg-orange-500 hover:bg-orange-600 text-white w-fit  "
+            className="md:hidden flex ml-auto mr-4 sticky right-0  bg-orange-500 hover:bg-orange-600 text-white lg:w-fit md:w-fit sm:sticky "
           >
             Order Now
           </Button>
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden"
+            className="md:hidden "
             onClick={toggleNavbar}
             aria-label={isOpen ? "Close menu" : "Open menu"}
           >

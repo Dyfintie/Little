@@ -12,17 +12,16 @@ const Hero = () => {
         </p>
         <p className="font-serif text-lg sm:text-xl text-orange-600 max-w-xl mx-auto md:mx-0 p-2">
           Explore a menu inspired by Italian, Chinese, and Continental flavors,
-          blending authenticity with modern flair in every bite.
+          blending authenticity with modern flair in every bite.zz
         </p>
       </div>
 
       <div className="w-full md:w-1/2 mt-8 md:mt-0">
-        <div className="relative rounded-lg overflow-hidden shadow-2xl">
-          <video autoPlay loop muted playsInline className="w-full h-auto">
+        <div className="relative rounded-lg overflow-hidden shadow-2xl ">
+          <video autoPlay loop muted playsInline className="w-full h-auto ">
             <source src="/assets/cafe.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-          <div className="absolute inset-0 bg-black bg-opacity-20"></div>
         </div>
       </div>
     </div>
