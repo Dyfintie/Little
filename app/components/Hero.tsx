@@ -12,7 +12,7 @@ const Hero = () => {
         </p>
         <p className="font-serif text-lg sm:text-xl text-orange-600 max-w-xl mx-auto md:mx-0 p-2">
           Explore a menu inspired by Italian, Chinese, and Continental flavors,
-          blending authenticity with modern flair in every bite.zz
+          blending authenticity with modern flair in every bite.
         </p>
       </div>
 
